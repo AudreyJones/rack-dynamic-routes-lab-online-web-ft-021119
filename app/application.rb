@@ -8,11 +8,8 @@ class Application
         item_name = req.path.split("/items/").last
         binding.pry
         @@items.each do {|item|
-        #
-        #
-        #
-        #   if item.name = item_name
-        #     resp.write "#{item.name}: $#{item.price}"
+          if item.name = item_name
+            resp.write "#{item.name}: $#{item.price}"
         #   #  item.name !=
         #   end
         #   }
