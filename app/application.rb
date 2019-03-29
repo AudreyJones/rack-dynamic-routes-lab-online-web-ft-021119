@@ -9,8 +9,7 @@ class Application
 
         if @@items.include?(item_name)
           binding.pry
-          @@items.select {|item|item.name = item_name
-          binding.pry}
+          @@items.select {|item|item.name = item_name}
             # binding.pry
             resp.write "#{item_name}: $#{sought_item.price}"
 
