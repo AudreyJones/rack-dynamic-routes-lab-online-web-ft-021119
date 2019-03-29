@@ -7,7 +7,10 @@ class Application
       if req.path.match(/items/)
         item_name = req.path.split("/items/").last
 binding.pry
-        @@items.select {|items| name = item_name}
+        @@items.select {|items| 
+binding.pry
+
+          name = item_name}
         if @@items.include?(item_name)
           # binding.pry
             resp.write "#{item_name}: $#{sought_item.price}"
