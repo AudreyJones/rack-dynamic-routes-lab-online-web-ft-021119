@@ -14,7 +14,7 @@ class Application
 
           if item.name = item_name
             resp.write "#{item.name}: $#{item.price}"
-          if item.name !=
+          #  item.name !=
           end
           }
 
