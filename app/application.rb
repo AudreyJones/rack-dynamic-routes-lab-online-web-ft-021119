@@ -11,6 +11,7 @@ class Application
           if item.name = item_name
             resp.write "#{item.name}: $#{item.price}"
           else
+            binding.pry
             resp.write "Item not found"
             resp.status 400
           end
