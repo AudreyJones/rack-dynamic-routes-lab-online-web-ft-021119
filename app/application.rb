@@ -9,9 +9,9 @@ class Application
         binding.pry
         @@items.include?(item_name)
         # @@items.each do {|item|
-        # 
-        # 
-        # 
+        #
+        #
+        #
         #   if item.name = item_name
         #     resp.write "#{item.name}: $#{item.price}"
         #   #  item.name !=
