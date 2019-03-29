@@ -11,7 +11,7 @@ class Application
           if item.name = item_name
             resp.write "#{item.name}: $#{item.price}"
           else
-            resp.write "Something"
+            resp.write "Item not found"
           end
         end
 
