@@ -2,7 +2,6 @@ class Application
   def call(env)
     resp = Rack::Response.new
     req = Rack::Request.new(env)
-    # item = Item.new(:name,:price)
     @@items = [Item.new("Figs",3.42),Item.new("Pears",0.99)]
       if req.path.match(/items/)
         item_name = req.path.split("/items/").last
