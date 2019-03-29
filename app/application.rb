@@ -10,9 +10,6 @@ class Application
         @@items.select {|item|
           if item.name = item_name
             resp.write "#{item.name}: $#{item.price}"
-          else
-            resp.write "I'm sorry, we don't carry that item"
-            resp.status = 400
           end
           }
 
