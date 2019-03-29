@@ -8,7 +8,10 @@ class Application
         item_name = req.path.split("/items/").last
 binding.pry
         if @@items.include?(item_name)
-          resp.write "#{item_name}: $#{sought_item.price}"
+          @@items.each do
+            resp.write "#{item_name}: $#{sought_item.price}"
+          end
+          
         else
           resp.write "I'm sorry, we don't carry that item"
           resp.status = 400
