@@ -7,8 +7,7 @@ class Application
       if req.path.match(/items/)
         item_name = req.path.split("/items/").last
         binding.pry
-        @@items.include?(item_name)
-        # @@items.each do {|item|
+        @@items.each do {|item|
         #
         #
         #
