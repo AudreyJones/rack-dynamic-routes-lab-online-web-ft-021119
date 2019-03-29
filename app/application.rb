@@ -7,7 +7,7 @@ class Application
       if req.path.match(/items/)
         item_name = req.path.split("/items/").last
 binding.pry
-        @@items.select {|items| 
+        @@items.select {|items|
 binding.pry
 
           name = item_name}
