@@ -7,7 +7,7 @@ class Application
       if req.path.match(/items/)
         item_name = req.path.split("/items/").last
 
-        if @@items.include?(sought_item.name)
+        if @@items.include?(item_name)
           resp.write "#{sought_item.name}: $#{sought_item.price}"
         else
           resp.write "I'm sorry, we don't carry that item"
