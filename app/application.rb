@@ -6,6 +6,7 @@ class Application
 
       if req.path.match(/items/)
         item_name = req.path.split("/items/").last
+
         @@items.select {|item|
           if item.name = item_name
             resp.write "#{item.name}: $#{item.price}"
