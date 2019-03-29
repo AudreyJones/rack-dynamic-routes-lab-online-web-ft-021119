@@ -11,7 +11,7 @@ binding.pry
           @@items.each do
             resp.write "#{item_name}: $#{sought_item.price}"
           end
-          
+
         else
           resp.write "I'm sorry, we don't carry that item"
           resp.status = 400
