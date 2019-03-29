@@ -10,7 +10,7 @@ class Application
         if @@items.include?(item_name)
           @@items.select {|item|item.name = item_name
           binding.pry}
-            binding.pry
+            # binding.pry
             resp.write "#{item_name}: $#{sought_item.price}"
 
         else
