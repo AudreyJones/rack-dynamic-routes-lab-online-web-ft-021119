@@ -14,7 +14,7 @@ class Application
             resp.write "#{item_name}: $#{sought_item.price}"
 
         else
-          resp.write "I'm sorry, we don't carry that item"
+          resp.write "I'm sorry, we don't carry that item 3.42"
           resp.status = 400
         end
       else
