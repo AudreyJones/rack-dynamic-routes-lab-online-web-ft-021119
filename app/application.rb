@@ -7,9 +7,6 @@ class Application
       if req.path.match(/items/)
         item_name = req.path.split("/items/").last
 
-# binding.pry
-        sought_item = req.params["Figs"]
-
         if @@items.include?(sought_item.name)
           resp.write "#{sought_item.name}: $#{sought_item.price}"
         else
