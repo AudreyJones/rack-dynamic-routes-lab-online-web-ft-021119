@@ -10,6 +10,7 @@ class Application
         @@items.each do {|item|
           if item.name = item_name
             resp.write "#{item.name}: $#{item.price}"
+          elsif item.name !=item_name
         #   #  item.name !=
         #   end
         #   }
