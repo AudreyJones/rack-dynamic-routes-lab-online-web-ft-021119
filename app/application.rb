@@ -8,7 +8,7 @@ class Application
         item_name = req.path.split("/items/").last
 
         if @@items.include?(item_name)
-          resp.write "#{sought_item.name}: $#{sought_item.price}"
+          resp.write "#{item_name}: $#{sought_item.price}"
         else
           resp.write "I'm sorry, we don't carry that item"
           resp.status = 400
