@@ -6,11 +6,11 @@ class Application
 
       if req.path.match(/items/)
         item_name = req.path.split("/items/").last
-binding.pry
+
         if @@items.include?(item_name)
-          @@items.each do
+          @@items.select {|item|item.name = item_name}
+            binding.pry
             resp.write "#{item_name}: $#{sought_item.price}"
-          end
 
         else
           resp.write "I'm sorry, we don't carry that item"
