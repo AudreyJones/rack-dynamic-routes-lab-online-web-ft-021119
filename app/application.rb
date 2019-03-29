@@ -9,7 +9,7 @@ class Application
 
         @@items.each do |item|
           if item.name = item_name
-            resp.write "#{item.name}: $#{item.price}"
+            resp.write "#{item.name}: $#{item.price}\n"
           else
             binding.pry
             resp.write "Item not found"
