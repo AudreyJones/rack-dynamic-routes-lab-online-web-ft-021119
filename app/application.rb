@@ -9,7 +9,7 @@ class Application
 # binding.pry
         @@items.select {|item|
           if item.name = item_name
-            resp.write "#{item_name}: $#{sought_item.price}"
+            resp.write "#{item.name}: $#{item.price}"
           end
           }
 
